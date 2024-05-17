@@ -1,0 +1,14 @@
+{
+  "name": "rough-calculation",
+  "version": "1.0.2",
+  "main": "./dist/index.js",
+  "author": "unknown",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "terser-webpack-plugin": "^5.3.10"
+  }
+}
