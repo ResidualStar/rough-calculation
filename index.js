@@ -576,7 +576,9 @@ class Input {
 						if (value.endsWith('%')) value = value.slice(0, -1) / 100
 
 						if (s.includes('$')) value = String(this.inputData[s.slice(2, -1).trim() + splicingStr].oValue)
-						return +replaceCommaWithDot(value)
+						value = replaceCommaWithDot(value)
+					
+						return isNaN(+value) ? `'${value}'` : +value
 					}
 
 					return s
